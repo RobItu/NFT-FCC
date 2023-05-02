@@ -6,14 +6,20 @@ const networkConfig = {
         name: "goerli",
         vrfCoordinatorV2: "0x2ca8e0c643bde4c2e08ab1fa0da3401adad7734d",
         subscriptionId: "8104",
+        gasLane: "",
         callbackGasLimit: "50000",
+        dogTokenUris: [],
+        mintFee: ethers.utils.parseEther("0.01"),
     },
     31337: {
         name: "hardhat",
         TOKEN_URI:
             "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json",
         initialTokenCounter: "0",
-        gasLane: "",
+        gasLane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
+        callbackGasLimit: "50000",
+        dogTokenUris: [],
+        mintFee: ethers.utils.parseEther("0.01"),
     },
 }
 

@@ -22,5 +22,16 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
     log(
         "-----------------------------------------------------------------------------------------------------------"
     )
-    const args = [vrfCoordinatorV2Address, subscriptionId, networkConfig[chainId]] // finish doing args
+    const gasLane = networkConfig[chainId]["gasLane"]
+    const callbackGasLimit = networkConfig[chainId]["callbackGasLimit"]
+    const dogTokenUris = networkConfig[chainId]["dogTokenUris"]
+    const mintFee = networkConfig[chainId]["mintFee"]
+    const args = [
+        vrfCoordinatorV2Address,
+        subscriptionId,
+        gasLane,
+        callbackGasLimit,
+        dogTokenUris,
+        mintFee,
+    ]
 }
