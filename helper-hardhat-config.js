@@ -8,7 +8,6 @@ const networkConfig = {
         subscriptionId: "8104",
         gasLane: "",
         callbackGasLimit: "50000",
-        dogTokenUris: [],
         mintFee: ethers.utils.parseEther("0.01"),
     },
     31337: {
@@ -18,7 +17,6 @@ const networkConfig = {
         initialTokenCounter: "0",
         gasLane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15",
         callbackGasLimit: "50000",
-        dogTokenUris: [],
         mintFee: ethers.utils.parseEther("0.01"),
     },
 }
