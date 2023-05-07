@@ -9,6 +9,7 @@ const networkConfig = {
         gasLane: "",
         callbackGasLimit: "50000",
         mintFee: ethers.utils.parseEther("0.01"),
+        priceFeedAddress: "0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e", //ETH/USD
     },
     31337: {
         name: "hardhat",
